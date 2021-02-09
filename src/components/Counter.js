@@ -1,5 +1,6 @@
 import Button from './Button';
 import React, { useState } from 'react';
+import {Link} from "react-router-dom";
 
 export default function Counter(props) {
 
@@ -8,9 +9,11 @@ export default function Counter(props) {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
+      <Button onClick={() => setCount(count + 1)}>
         Click me
-    </button>
+    </Button>
+    <br></br>
+    <Link to="/">Home</Link>
     </div>
   );
 }
