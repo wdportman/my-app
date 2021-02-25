@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Counter from './components/pages/Counter';
 import RPS from './components/pages/RPS';
 import Home from './components/pages/Home';
@@ -11,8 +11,6 @@ import {
 } from "react-router-dom";
 
 export default function App() {
-  const [yourScore, setYourScore] = useState(0);
-  const [computerScore, setComputerScore] = useState(0);
 
   return (
     <Router>
@@ -27,10 +25,7 @@ export default function App() {
         </Route>
         
         <Route exact path='/rps'>
-          <RPS
-            yourScore={yourScore}
-            computerScore={computerScore}
-          />
+          <RPS/>
         </Route>
 
         <Route path="*">

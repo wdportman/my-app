@@ -1,4 +1,4 @@
-const useRPS = () => {
+const useRPS = (userChoice) => {
 
   const generateRandomChoice = () => {
     const choices = ['Rock', 'Paper', 'Scissors'];
