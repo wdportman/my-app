@@ -15,17 +15,31 @@ code {
     monospace;
 }
 
+.rps {
+  display: flex;
+  align-content: space-between;
+}
+
+.rps-column {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
 .rps-images {
   display: flex;
   flex-direction: column;
 }
 
 .rps-image {
-  width: 20%;
-  cursor: pointer;
+  width: 50%;
 }
 
 .rps-image:active {
   position:relative;
 	top:2px;
+}
+
+.rps-image:hover {
+  cursor: pointer;
 }
