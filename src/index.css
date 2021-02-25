@@ -20,5 +20,11 @@ code {
 }
 
 .rps-image {
-  width: 20%
+  width: 20%;
+  cursor: pointer;
+}
+
+.rps-image:active {
+  position:relative;
+	top:2px;
 }

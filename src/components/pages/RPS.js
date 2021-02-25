@@ -5,6 +5,10 @@ import Rock from '../../docs/Rock.jpg'
 import Paper from '../../docs/Paper.jpg'
 import Scissors from '../../docs/Scissors.jpg'
 
+const handleClick = function() {
+  console.log("Click!")
+}
+
 export default function RPS(props) {
 
   return (
@@ -12,9 +16,9 @@ export default function RPS(props) {
       <h3>Rock Paper Scissors</h3>
       <p>Pick an option</p>
       <div className='rps-images'>
-        <img className='rps-image' src={Rock} alt="Rock" />
-        <img className='rps-image' src={Paper} alt="Paper" />
-        <img className='rps-image' src={Scissors} alt="Scissors" />
+        <img className='rps-image' src={Rock} alt="Rock" onClick={handleClick} />
+        <img className='rps-image' src={Paper} alt="Paper" onClick={handleClick} />
+        <img className='rps-image' src={Scissors} alt="Scissors" onClick={handleClick} />
       </div>
       <Link to="/">Home</Link>
     </div>
