@@ -11,6 +11,8 @@ const handleClick = function(imageName) {
 
 export default function RPS(props) {
 
+  const {yourScore, computerScore} = props;
+
   return (
     <div>
       <h3>Rock Paper Scissors</h3>
@@ -29,6 +31,8 @@ export default function RPS(props) {
         </div>
         <div className='rps-column'>
           <p>Scoreboard:</p>
+          <p><b>You:</b> {yourScore}</p>
+          <p><b>Computer:</b> {computerScore}</p>
         </div>
       </div>
       <Link to="/">Home</Link>

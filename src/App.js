@@ -1,6 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
-import Button from './components/Button';
+import React, {useState} from 'react'
 import Counter from './components/pages/Counter';
 import RPS from './components/pages/RPS';
 import Home from './components/pages/Home';
@@ -12,7 +10,9 @@ import {
   Redirect
 } from "react-router-dom";
 
-function App() {
+export default function App() {
+  const [yourScore, setYourScore] = useState(1);
+  const [computerScore, setComputerScore] = useState(1);
 
   return (
     <Router>
@@ -27,7 +27,10 @@ function App() {
         </Route>
         
         <Route exact path='/rps'>
-          <RPS></RPS>
+          <RPS
+            yourScore={yourScore}
+            computerScore={computerScore}
+          />
         </Route>
 
         <Route path="*">
@@ -39,5 +42,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
