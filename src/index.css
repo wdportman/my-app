@@ -17,6 +17,7 @@ code {
 
 .rps-images {
   display: flex;
+  flex-direction: column;
 }
 
 .rps-image {
