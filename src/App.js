@@ -11,8 +11,8 @@ import {
 } from "react-router-dom";
 
 export default function App() {
-  const [yourScore, setYourScore] = useState(1);
-  const [computerScore, setComputerScore] = useState(1);
+  const [yourScore, setYourScore] = useState(0);
+  const [computerScore, setComputerScore] = useState(0);
 
   return (
     <Router>
