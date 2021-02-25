@@ -8,6 +8,7 @@ export default function Counter(props) {
 
   return (
     <div>
+      <h3>The Mighty Counter</h3>
       <p>You clicked {count} times</p>
       <Button onClick={() => setCount(count + 1)}>
         Click me

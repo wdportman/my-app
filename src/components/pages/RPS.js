@@ -6,7 +6,8 @@ export default function RPS(props) {
 
   return (
     <div>
-      <p>Let's play Rock Paper Scissors</p>
+      <h3>Rock Paper Scissors</h3>
+      <p>Pick an option</p>
       <Link to="/">Home</Link>
     </div>
   );
