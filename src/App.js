@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
-import Counter from './components/Counter';
-import RPS from './components/RPS';
-import Home from './components/Home';
-import NotFound from './components/NotFound';
+import Counter from './components/pages/Counter';
+import RPS from './components/pages/RPS';
+import Home from './components/pages/Home';
+import NotFound from './components/pages/NotFound';
 import {
   BrowserRouter as Router,
   Switch,
