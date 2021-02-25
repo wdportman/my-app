@@ -4,11 +4,12 @@ import Button from './components/Button';
 import Counter from './components/Counter';
 import RPS from './components/RPS';
 import Home from './components/Home';
-import NotFound from './components/Home';
+import NotFound from './components/NotFound';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 
 function App() {
@@ -28,8 +29,13 @@ function App() {
         <Route exact path='/rps'>
           <RPS></RPS>
         </Route>
+
+        <Route path="*">
+            <NotFound></NotFound>
+        </Route>
       
       </Switch>
+
     </Router>
   );
 }

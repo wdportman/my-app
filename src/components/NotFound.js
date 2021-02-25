@@ -3,8 +3,6 @@ import {Link} from "react-router-dom";
 
 export default function NotFound(props) {
 
-  const [count, setCount] = useState(0);
-
   return (
     <div>
       <p>Not Found!</p>
